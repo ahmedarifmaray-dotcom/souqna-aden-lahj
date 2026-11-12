@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071d38">
+  <meta name="description" content="سوقنا - اكتشف المحلات والعروض والمنتجات في عدن ولحج.">
+  <title>سوقنا | كل ما تبحث عنه أقرب إليك</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="سوقنا - الرئيسية">
+      <span class="brand-mark">⌖</span>
+      <span><b>سوقنا</b><small>SOUQNA</small></span>
+    </a>
+    <a class="merchant-link" href="#join">أضف محلك <span>＋</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">منصتك المحلية للتسوق والاكتشاف</p>
+      <h1>كل ما تبحث عنه،<br><em>أقرب إليك.</em></h1>
+      <p class="hero-copy">اكتشف المحلات والعروض والمنتجات في عدن ولحج، وتواصل مباشرة مع البائع.</p>
+      <div class="location-switch" aria-label="اختر المدينة">
+        <button class="city active" data-city="الكل">كل المناطق</button>
+        <button class="city" data-city="عدن">عدن</button>
+        <button class="city" data-city="لحج">لحج</button>
+      </div>
+      <label class="searchbox">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="ابحث عن محل أو منتج..." autocomplete="off">
+        <button id="clearSearch" aria-label="مسح البحث">×</button>
+      </label>
+      <div class="hero-note"><span class="live-dot"></span> دليل محلي يجمع المتاجر في مكان واحد</div>
+    </section>
+
+    <section class="section categories-section">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">تسوّق بذكاء</p><h2>تصفح الأقسام</h2></div>
+        <span class="muted">اختر ما تبحث عنه</span>
+      </div>
+      <div class="categories" id="categories">
+        <button class="category active" data-category="الكل"><span>✦</span>الكل</button>
+        <button class="category" data-category="ملابس"><span>◇</span>ملابس</button>
+        <button class="category" data-category="هواتف"><span>▣</span>هواتف</button>
+        <button class="category" data-category="عطور"><span>❋</span>عطور</button>
+        <button class="category" data-category="مطاعم"><span>♨</span>مطاعم</button>
+        <button class="category" data-category="منزل"><span>⌂</span>المنزل</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">مختارة لك</p><h2>محلات وعروض</h2></div>
+        <span class="count" id="resultsCount">0 نتيجة</span>
+      </div>
+      <div class="listing-grid" id="listingGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌕</span><h3>لم نعثر على نتائج</h3><p>جرّب تغيير كلمة البحث أو المدينة أو القسم.</p>
+      </div>
+      <p class="demo-note">تنبيه: البطاقات المعروضة حالياً أمثلة تجريبية للتصميم وليست محلات أو عروضاً حقيقية.</p>
+    </section>
+
+    <section class="join-section" id="join">
+      <div class="join-icon">＋</div>
+      <p class="eyebrow">أصحاب المحلات والتجار</p>
+      <h2>خلّ محلك أقرب<br>إلى عملائك</h2>
+      <p>انضم إلى دليل سوقنا التجريبي في عدن ولحج. أرسل بيانات محلك لنراجعها ونتواصل معك.</p>
+      <a class="primary-btn" id="merchantWhatsApp" href="#" target="_blank" rel="noopener">تواصل لإضافة محلك عبر واتساب <span>←</span></a>
+      <small>يجب إعداد رقم واتساب المشروع في ملف app.js قبل استقبال الطلبات.</small>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">⌖</span><span><b>سوقنا</b><small>SOUQNA</small></span></a>
+    <p>كل ما تبحث عنه… أقرب إليك.</p>
+    <div class="footer-links"><a href="#join">للتجار</a><a href="mailto:hello@souqna.example">راسلنا</a></div>
+    <small>© <span id="year"></span> سوقنا. جميع الحقوق محفوظة.</small>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="التنقل الرئيسي">
+    <a class="selected" href="#"><span>⌂</span>الرئيسية</a>
+    <a href="#categories"><span>▦</span>الأقسام</a>
+    <a href="#join"><span>＋</span>للتجار</a>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
